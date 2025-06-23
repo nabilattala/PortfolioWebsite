@@ -886,30 +886,38 @@ button:focus {
 }
 
 .resume {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   justify-content: center;
 }
 
 .resume-left {
-  padding-right: 80px !important;
+  padding-right: 40px !important;
 }
 
 .resume-right {
-  padding-left: 80px !important;
+  padding-left: 40px !important;
+}
+
+@media (max-width: 991px) {
+  .resume-left,
+  .resume-right {
+    padding: 0 20px !important;
+  }
 }
 
 @media (max-width: 767px) {
-  .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+  .resume {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
+  .resume-left,
   .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+    padding: 0 10px !important;
   }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;

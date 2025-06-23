@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/homee.png";
 import myImg from "../../Assets/nabilll.png";
 import Particle from "../Particle";
 import Type from "./Type";
@@ -37,14 +37,14 @@ function Home() {
                 </div>
               </Col>
 
-              {/* <Col md={5} style={{ paddingBottom: 20 }}>
+              <Col md={5} style={{ paddingBottom: 20 }}>
                 <img
                   src={homeLogo}
                   alt="home pic"
                   className="img-fluid"
                   style={{ maxHeight: "450px" }}
                 />
-              </Col> */}
+              </Col>
             </Row>
           </Container>
         </Container>
@@ -54,37 +54,54 @@ function Home() {
             <Row>
               <Col md={8} className="home-about-description">
                 <h1 style={{ fontSize: "2.6em" }}>
-                <Trans 
-                  i18nKey="home.subtitle"
-                  components={{
-                    1: <span className="purple" />
-                  }}
-                />
-              </h1>
-                  <p className="home-about-body">
-                    Saya adalah seorang web developer dengan keahlian dalam
-                    pengembangan aplikasi web yang efisien dan user-friendly.
-                    <br />
-                    <br />
-                    Bidang keahlian saya mencakup pengembangan &nbsp;
-                    <i>
-                      <b className="purple">Backend Systems</b> serta
-                      berpengalaman dalam peran sebagai{" "}
-                      <b className="purple">System Analyst.</b>
-                    </i>
-                    <br />
-                    <br />
-                   Dengan background <b className="purple"> System Analyst, </b> 
-                    saya menganalisis kebutuhan bisnis untuk kemudian diimplementasikan menggunakan
-                    <i>
-                      <b className="purple"> Laravel Framework</b> dan    
-                    </i>
-                     <i>
-                       <b className="purple">
-                         solusi digital yang tepat sasaran
-                      </b>
-                     </i>
-                  </p>
+                  <Trans
+                    i18nKey="home.subtitle"
+                    components={{
+                      1: <span className="purple" />,
+                    }}
+                  />
+                </h1>
+                <p className="home-about-body">
+                  <Trans
+                    i18nKey="home.aboutBody"
+                    components={{
+                      1: (
+                        <span className="purple">
+                          <i>
+                            <b></b>
+                          </i>
+                        </span>
+                      ),
+                      2: (
+                        <span className="purple">
+                          <i>
+                            <b></b>
+                          </i>
+                        </span>
+                      ),
+                      3: (
+                        <span className="purple">
+                          <b></b>
+                        </span>
+                      ),
+                      4: (
+                        <span className="purple">
+                          <i>
+                            <b></b>
+                          </i>
+                        </span>
+                      ),
+                      5: (
+                        <span className="purple">
+                          <i>
+                            <b></b>
+                          </i>
+                        </span>
+                      ),
+                      br: <br />,
+                    }}
+                  />
+                </p>
               </Col>
               <Col md={4} className="myAvtar">
                 <Tilt>
@@ -94,9 +111,14 @@ function Home() {
             </Row>
             <Row>
               <Col md={12} className="home-about-social">
-                <h1>FIND ME ON</h1>
+                <h1>{t("home.socialTitle")}</h1>
                 <p>
-                  Feel free to <span className="purple">connect </span>with me
+                  <Trans
+                    i18nKey="home.socialDescription"
+                    components={{
+                      1: <span className="purple"></span>,
+                    }}
+                  />
                 </p>
                 <ul className="home-about-social-links">
                   <li className="social-icons">

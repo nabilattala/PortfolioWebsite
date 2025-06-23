@@ -35,13 +35,13 @@ function About() {
             </h1>
             <Aboutcard />
           </Col>
-          {/* <Col
+          <Col
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col> */}
+          </Col>
         </Row>
        <h1 className="project-heading">
           <Trans 

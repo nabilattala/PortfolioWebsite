@@ -1,4 +1,3 @@
-// src/i18n/i18n.js
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
@@ -21,9 +20,12 @@ const resources = {
         introduction: "I'm",
         name: "Nabil Attala Noviandy",
         subtitle: "LET ME <1>INTRODUCE</1> MYSELF",
-        description:
-          "I am a web developer with expertise in building efficient and user-friendly web applications.\n\nI have a strong grasp of fundamental web technologies such as <1>HTML, CSS, and PHP.</1>\n\nMy areas of expertise include developing <2>Backend Systems</2> and I also have experience as a <2>System Analyst.</2>\n\nIn every project, I apply my skills in using the <3>Laravel Framework</3> and <4>Modern Web Development Practices</4> to build <5>scalable and robust digital solutions</5>.",
+        description: "I am a web developer with expertise in building efficient and user-friendly web applications.\n\nI have a strong grasp of fundamental web technologies such as <1>HTML, CSS, and PHP.</1>\n\nMy areas of expertise include developing <2>Backend Systems</2> and I also have experience as a <2>System Analyst.</2>\n\nIn every project, I apply my skills in using the <3>Laravel Framework</3> and <4>Modern Web Development Practices</4> to build <5>scalable and robust digital solutions</5>.",
+        aboutBody: "I am a web developer with expertise in developing efficient and user-friendly web applications.<br/><br/>My areas of expertise include developing <1>Backend Systems</1> and I have experience as a <2>System Analyst.</2><br/><br/>With a <3>System Analyst</3> background, I analyze business requirements to then implement them using the <4>Laravel Framework</4> and <5>targeted digital solutions</5>",
+        socialTitle: "FIND ME ON",
+        socialDescription: "Feel free to <1>connect</1> with me",
       },
+      
 
       // About Page
       about: {
@@ -88,8 +90,10 @@ const resources = {
         introduction: "Saya",
         name: "Nabil Attala Noviandy",
         subtitle: "<1>PERKENALKAN</1> DIRI SAYA",
-        description:
-          "Saya adalah seorang web developer dengan keahlian dalam pengembangan aplikasi web yang efisien dan user-friendly.\n\nSaya menguasai teknologi web fundamental seperti <1>HTML, CSS, dan PHP.</1>\n\nBidang keahlian saya mencakup pengembangan <2>Backend Systems</2> serta berpengalaman dalam peran sebagai <2>System Analyst.</2>\n\nDalam setiap proyek, saya menerapkan keahlian saya dalam menggunakan <3>Laravel Framework</3> dan <4>Modern Web Development Practices</4> untuk menciptakan <5>solusi digital yang scalable dan robust</5>.",
+        description:"Saya adalah seorang web developer dengan keahlian dalam pengembangan aplikasi web yang efisien dan user-friendly.\n\nSaya menguasai teknologi web fundamental seperti <1>HTML, CSS, dan PHP.</1>\n\nBidang keahlian saya mencakup pengembangan <2>Backend Systems</2> serta berpengalaman dalam peran sebagai <2>System Analyst.</2>\n\nDalam setiap proyek, saya menerapkan keahlian saya dalam menggunakan <3>Laravel Framework</3> dan <4>Modern Web Development Practices</4> untuk menciptakan <5>solusi digital yang scalable dan robust</5>.",
+        aboutBody: "Saya adalah seorang web developer dengan keahlian dalam pengembangan aplikasi web yang efisien dan user-friendly.<br/><br/>Bidang keahlian saya mencakup pengembangan <1>Backend Systems</1> serta berpengalaman dalam peran sebagai <2>System Analyst</2>.<br/><br/>Dengan background <3>System Analyst,</3> saya menganalisis kebutuhan bisnis untuk kemudian diimplementasikan menggunakan <4>Laravel Framework</4> dan <5>solusi digital yang tepat sasaran</5>.  ",
+        socialTitle: "TEMUKAN SAYA DI",
+        socialDescription: "Jangan ragu untuk <1>terhubung</1> dengan saya",
       },
 
       // About Page

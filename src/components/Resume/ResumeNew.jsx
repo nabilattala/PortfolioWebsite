@@ -26,7 +26,12 @@ function ResumeNew() {
             className="d-flex justify-content-center"
             onLoadError={(error) => console.error("PDF load error:", error)}
           >
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page
+              pageNumber={1}
+              scale={
+                width > 1200 ? 1.25 : width > 768 ? 1 : width > 576 ? 0.75 : width > 480 ? 0.65 : 0.6
+              }
+            />
           </Document>
         </Row>
 
