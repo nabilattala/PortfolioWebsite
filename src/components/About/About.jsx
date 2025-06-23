@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-// import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/About.png";
+import laptopImg from "../../assets/About.png";
 import Toolstack from "./Toolstack";
 import { useTranslation, Trans } from 'react-i18next';
 
