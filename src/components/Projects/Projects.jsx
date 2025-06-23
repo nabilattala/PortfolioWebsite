@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import simeet from "../../Assets/Projects/simeet.png";
-import emotion from "../../Assets/Projects/emotion.png";
 import rekam from "../../Assets/Projects/rekammedis.png";
 import simonik from "../../Assets/Projects/simonik .png";
 import onlinecourse from "../../Assets/Projects/online course.png";
@@ -11,7 +10,7 @@ import webku from "../../Assets/Projects/webku.png";
 import { useTranslation, Trans } from "react-i18next";
 
 function Projects() {
-  const { t } = useTranslation();
+  const { t } = useTranslation();   
 
   return (
     <Container fluid className="project-section">
