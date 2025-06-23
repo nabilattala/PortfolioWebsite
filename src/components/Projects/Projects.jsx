@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import simeet from "../../Assets/Projects/simeet.png";
-import rekam from "../../Assets/Projects/rekammedis.png";
-import simonik from "../../Assets/Projects/simonik .png";
-import onlinecourse from "../../Assets/Projects/online course.png";
-import webku from "../../Assets/Projects/webku.png";
+import simeet from "../../Assets/Projects/Simeet.png";
+import rekam from "../../Assets/Projects/Rekammedis.png";
+import simonik from "../../Assets/Projects/Simonik .png";
+import onlinecourse from "../../Assets/Projects/Onlinecourse.png";
+import webku from "../../Assets/Projects/Webku.png";
 import { useTranslation, Trans } from "react-i18next";
 
 function Projects() {
