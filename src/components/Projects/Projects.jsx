@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
+import Particles from "@tsparticles/react";
 import simeet from "../../assets/Projects/Simeet.png";
 import rekam from "../../assets/Projects/Rekammedis.png";
 import simonik from "../../assets/Projects/Simonik.png";
@@ -14,7 +14,7 @@ function Projects() {
 
   return (
     <Container fluid className="project-section">
-      <Particle />
+      <Particles />
       <Container>
         <h1 className="project-heading">
           <Trans

@@ -1,20 +1,33 @@
-import React from "react";
-import Particles from "react-tsparticles";
+import React, { useCallback } from "react";
+import Particles from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 function Particle() {
+  // Initialize particles engine
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
+
+  // Callback when particles loaded
+  const particlesLoaded = useCallback(async (container) => {
+    console.log(container);
+  }, []);
+
   return (
     <Particles
       id="tsparticles"
-      params={{
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
         particles: {
           number: {
             value: 160,
             density: {
               enable: true,
-              value_area: 1500,
+              area: 1500, // value_area -> area
             },
           },
-          line_linked: {
+          links: { // line_linked -> links
             enable: false,
             opacity: 0.03,
           },
@@ -26,27 +39,27 @@ function Particle() {
             value: 1,
           },
           opacity: {
-            anim: {
+            animation: { // anim -> animation
               enable: true,
               speed: 1,
-              opacity_min: 0.05,
+              minimumValue: 0.05, // opacity_min -> minimumValue
             },
           },
         },
         interactivity: {
           events: {
-            onclick: {
+            onClick: { // onclick -> onClick
               enable: true,
               mode: "push",
             },
           },
           modes: {
             push: {
-              particles_nb: 1,
+              quantity: 1, // particles_nb -> quantity
             },
           },
         },
-        retina_detect: true,
+        detectRetina: true, // retina_detect -> detectRetina
       }}
     />
   );

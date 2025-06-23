@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../assets/Home.png";
 import myImg from "../../assets/Nabilll.png";
-import Particle from "../Particle";
+import Particles from "@tsparticles/react";
 import Type from "./Type";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
@@ -16,7 +16,7 @@ function Home() {
     <div className="home-wrapper">
       <section>
         <Container fluid className="home-section" id="home">
-          <Particle />
+          <Particles />
           <Container className="home-content">
             <Row>
               <Col md={7} className="home-header">
